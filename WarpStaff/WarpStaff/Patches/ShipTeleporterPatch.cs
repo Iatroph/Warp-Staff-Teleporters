@@ -24,6 +24,8 @@ namespace WarpStaff.Patches
             {
                 __instance.beamUpPlayerBodySFX = ModBase.soundFX[0];
             }
+
+            __instance.teleporterBeamUpSFX = ModBase.soundFX[2];
         }
 
 

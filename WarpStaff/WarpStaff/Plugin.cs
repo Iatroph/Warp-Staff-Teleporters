@@ -16,7 +16,7 @@ namespace WarpStaff
     {
         private const string modGUID = "Iatroph.WarpStaffTeleporters";
         private const string modName = "Warp Staff Teleporters";
-        private const string modVersion = "1.0.0.0";
+        private const string modVersion = "1.1.0.0";
 
         private readonly Harmony harmony = new Harmony(modGUID);
 
@@ -42,7 +42,6 @@ namespace WarpStaff
             soundFX = new List<AudioClip>();
             string folderLoc = Instance.Info.Location;
             folderLoc = folderLoc.TrimEnd("WarpStaff.dll".ToCharArray());
-            mls.LogInfo(folderLoc);
             Bundle = AssetBundle.LoadFromFile(folderLoc + "teleporters");
 
             if(Bundle != null )
@@ -61,6 +60,7 @@ namespace WarpStaff
 
             mls.LogInfo(soundFX[0].name);
             mls.LogInfo(soundFX[1].name);
+            mls.LogInfo(soundFX[2].name);
 
         }
     }
